@@ -5,7 +5,7 @@ Yet another library for drawing [Material Design promoted actions](http://www.go
 What's New
 ========
 * Set Custom Font Typeface For FloatingActionButton
-  mFloatingActionButton.setTypeface(mTypeface)
+  !mFloatingActionButton.setTypeface(mTypeface)
   
 Features
 ========
