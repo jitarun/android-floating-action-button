@@ -11,6 +11,7 @@ import android.graphics.Paint.Style;
 import android.graphics.Rect;
 import android.graphics.Shader;
 import android.graphics.Shader.TileMode;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
@@ -56,6 +57,7 @@ public class FloatingActionButton extends ImageButton {
   private float mShadowOffset;
   private int mDrawableSize;
   boolean mStrokeVisible;
+  private Typeface mTypeface;
 
   public FloatingActionButton(Context context) {
     this(context, null);
@@ -212,7 +214,13 @@ public class FloatingActionButton extends ImageButton {
       label.setText(title);
     }
   }
-
+  public void setTypeface(Typeface typeface) {
+    mTypeface = typeface;
+    TextView label = getLabelView();
+    if (label != null) {
+      label.setTypeface(typeface);
+    }
+  }
   TextView getLabelView() {
     return (TextView) getTag(R.id.fab_label);
   }
