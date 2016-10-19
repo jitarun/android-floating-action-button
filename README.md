@@ -27,7 +27,7 @@ Features
 
   ![Demo](screenshots/labels.png)
 
-Usage
+Usage [![](https://jitpack.io/v/jitarun/android-floating-action-button.svg)](https://jitpack.io/#jitarun/android-floating-action-button)
 =====
 Just Add it in your root build.gradle at the end of repositories:
 
