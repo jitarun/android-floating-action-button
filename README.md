@@ -3,7 +3,7 @@ FloatingActionButton
 Yet another library for drawing [Material Design promoted actions](http://www.google.com/design/spec/patterns/promoted-actions.html).
 
 What's New
-========
+==========
 * Set Custom Font Typeface For FloatingActionButton.
   
   mFloatingActionButton.setTypeface(mTypeface)
