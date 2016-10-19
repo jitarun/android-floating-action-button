@@ -23,12 +23,19 @@ Features
 
 Usage
 =====
-Just add the dependency to your `build.gradle`:
+Just Add it in your root build.gradle at the end of repositories:
+allprojects {
+		repositories {
+			...
+			maven { url "https://jitpack.io" }
+		}
+	}
+Then add the dependency to your app `build.gradle`:
 
 ```groovy
 dependencies {
-    compile 'com.getbase:floatingactionbutton:1.10.1'
-}
+	        compile 'com.github.jitarun:android-floating-action-button:1.10.2'
+	}
 ```
 
 To see how the buttons are added to your xml layouts, check the sample project.
